@@ -1,0 +1,24 @@
+{
+    "name": "path to dharma",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "Sanathana dharma",
+    "icons": {
+        "128": "icons/nirmalam128x128.png"
+    },
+    "browser_action": {
+        "default_popup": "popup/popup.html"
+    }
+    ,
+    "content_scripts": [
+        {
+            "matches": [
+              "<all_urls>"
+            ],
+            "js": ["lib/jquery.min.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        "images/*.jpeg"
+    ]
+}
